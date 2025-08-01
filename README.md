@@ -24,7 +24,7 @@ This project focuses on time series forecasting of Maruti Suzuki stock prices us
 
 + Visualized candlestick charts
 
-I+ dentified seasonality, trend, and volatility
++ dentified seasonality, trend, and volatility
 
 + Applied log transformation for stabilization of variance
 
