@@ -4,9 +4,9 @@ This project focuses on time series forecasting of Maruti Suzuki stock prices us
 
 #### Tools & Libraries Used:
 
-Python
++ Python
 
-Pandas, NumPy — Data manipulation
++ Pandas, NumPy — Data manipulation
 
 Matplotlib, Plotly, Seaborn — Data visualization
 
