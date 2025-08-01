@@ -1,54 +1,54 @@
-## Maruti Suzuki Stock Price Forecasting using ARIMA and CNN-LSTM
+# Maruti Suzuki Stock Price Forecasting using ARIMA and CNN-LSTM
 
 This project focuses on time series forecasting of Maruti Suzuki stock prices using both classical statistical methods (ARIMA) and a deep learning-based hybrid approach (1D CNN-LSTM). It includes exploratory data analysis, preprocessing, model building, evaluation, and visualization.
 
-#### Tools & Libraries Used:
+### Tools & Libraries Used:
 
 + Python
 
 + Pandas, NumPy — Data manipulation
 
-Matplotlib, Plotly, Seaborn — Data visualization
++ Matplotlib, Plotly, Seaborn — Data visualization
 
-Statsmodels — ARIMA modeling
++ Statsmodels — ARIMA modeling
 
-Scikit-learn — Evaluation metrics
++ Scikit-learn — Evaluation metrics
 
-TensorFlow / Keras — Deep learning (CNN-LSTM)
++ TensorFlow / Keras — Deep learning (CNN-LSTM)
 
-#### Exploratory Data Analysis (EDA):
+### Exploratory Data Analysis (EDA):
 
-Plotted OHLC, Volume, VWAP
++ Plotted OHLC
 
-Monthly & annual average prices
++ Monthly & annual average prices
 
-Visualized candlestick charts
++ Visualized candlestick charts
 
-Identified seasonality, trend, and volatility
+I+ dentified seasonality, trend, and volatility
 
-Applied log transformation for stabilization of variance
++ Applied log transformation for stabilization of variance
 
-#### ARIMA Modeling (Baseline):
+### ARIMA Modeling (Baseline):
 
-STL decomposition used to analyze seasonal and trend components
++ STL decomposition used to analyze seasonal and trend components
 
-Checked stationarity using ADF test
++ Checked stationarity using ADF test
 
-Applied differencing, and plotted ACF & PACF
++ Applied differencing, and plotted ACF & PACF
 
-Tried various models: ARIMA(0,1,0), ARIMA(1,1,0), ARIMA(0,1,1)
++ Tried various models: ARIMA(0,1,0), ARIMA(1,1,0), ARIMA(0,1,1)
 
-Selected model using AIC/BIC criteria
++ Selected model using AIC/BIC criteria
 
-#### ARIMA Evaluation (Last 30 Business Days):
+### ARIMA Evaluation (Last 30 Business Days):
 
-Forecasted stock prices for 30 days
++ Forecasted stock prices for 30 days
 
-MAPE: 1.38%
++ MAPE: 1.38%
 
-Actual vs Predicted plotted with 95% confidence intervals
++ Actual vs Predicted plotted with 95% confidence intervals
 
-#### Deep Learning: 1D CNN + LSTM Model:
+### Deep Learning: 1D CNN + LSTM Model:
 
 Model:
 Input Layer
@@ -58,17 +58,17 @@ Input Layer
 → Dense Layer (Output)
 
 
-##### Model Evaluation:
+#### Model Evaluation:
 
-MSE: 1,020,594.91
++ MSE: 1,020,594.91
 
-MAE: 851.16
++ MAE: 851.16
 
-R² Score: 0.2375
++ R² Score: 0.2375
 
-Adjusted R²: 0.1999
++ Adjusted R²: 0.1999
 
-#### Actual vs Predicted (CNN-LSTM):
+### Actual vs Predicted (CNN-LSTM):
 
 Plotted side-by-side predictions vs actual for test period.
 
@@ -77,21 +77,21 @@ Source: [NSE/BSE or Kaggle]
 
 Time Range: 2003-07-09 to 2020-10-30
 
-#### How to Run:
-Clone this repository
+### How to Run:
+1. Clone this repository
 
-Install dependencies from requirements.txt
+2. Install dependencies from requirements.txt
 
-Run arima_model.ipynb for statistical modeling
+3. Run arima_model.ipynb for statistical modeling
 
-Run cnn_lstm_model.ipynb for deep learning approach
+4. Run cnn_lstm_model.ipynb for deep learning approach
 
-Visualizations are saved in /results/plots
+5. Visualizations are saved in /results/plots
 
 #### Future Work:
-Hyperparameter tuning of CNN-LSTM using KerasTuner
++ Hyperparameter tuning of CNN-LSTM using KerasTuner
 
-Try Transformer models or Hybrid Prophet-ARIMA
++ Try Transformer models or Hybrid Prophet-ARIMA
 
-Deploy forecast as a Streamlit dashboard
++ Deploy forecast as a Streamlit dashboard
 
